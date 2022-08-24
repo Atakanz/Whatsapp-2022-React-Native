@@ -11,12 +11,22 @@ export default StyleSheet.create(
         alignSelf:'flex-start',
         paddingHorizontal:5,
         paddingVertical:5,
+        flexDirection:'row'
        
       },
       textMessage: {
         fontSize: 19,
         color:'black',
       },
+      textHour: {
+        fontWeight:'bold',
+        fontSize:13,
+      },
+      textHourView: {
+        marginLeft:'auto',
+        justifyContent:'flex-end',
+        marginLeft:12,
+      }
       
     }
 )
