@@ -5,7 +5,7 @@
             id: "p1",
             firstName:"Pınar",
             lastName:"Canoğlu",
-            imageUrl:"https://picsum.photos/id/237/80/80"
+            imageUrl:"https://picsum.photos/id/237/200/300"
         },
         messages: [
             {
@@ -27,11 +27,12 @@
        receiver : {
             id: "p2",
             firstName:"Melek Ecem",
-            lastName:"Menet"
+            lastName:"Menet",
+            imageUrl:"https://picsum.photos/id/237/200/300"
         },
         messages: [
             {
-                text:"Sana birşey sorabilir miyim?",
+                text:"Nasılsın?",
                 dateTime:"2022-08-20T19:00:00Z"
             },
             {
@@ -49,11 +50,12 @@
        receiver : {
             id: "p3",
             firstName:"Sinem",
-            lastName:"Yeniçeri"
+            lastName:"Yeniçeri",
+            imageUrl:"https://picsum.photos/id/237/200/300"
         },
         messages: [
             {
-                text:"Sana birşey sorabilir miyim?",
+                text:"Kafeye gidelim mi?",
                 dateTime:"2022-08-20T19:00:00Z"
             },
             {

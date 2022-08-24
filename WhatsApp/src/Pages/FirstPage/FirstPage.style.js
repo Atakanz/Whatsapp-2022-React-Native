@@ -45,6 +45,10 @@ export default StyleSheet.create(
         },
         viewText: {
             justifyContent:'center',
+        },
+        seperator: {
+            borderWidth:0.3,
+            borderColor:'lightgray',
         }
         
     }

@@ -6,16 +6,17 @@ import styles from './messagesListUnit.style'
 
 const MessagesUnit = props => {
 
-
-
     return (
         <TouchableOpacity style={styles.messagesUnit} onPress={props.onPress}>
-            <View>
-                <Image source={{uri: props.info.imageUrl}}/>
-            </View>
-            <View>
-                <Text>{props.info.firstName} {props.info.lastName}</Text>
-                <Text>{props.messageInfo[0].text}</Text>
+            <View style={styles.photoTextCover}>
+                <View>
+                    <Image style={styles.photo} source={{ uri: props.info.imageUrl }}
+                    />
+                </View>
+                <View style={styles.unitTextView}>
+                    <Text style={styles.unitText}>{props.info.firstName} {props.info.lastName}</Text>
+                    <Text style={styles.unitText}>{props.messageInfo[0].text}</Text>
+                </View>
             </View>
         </TouchableOpacity>
     )

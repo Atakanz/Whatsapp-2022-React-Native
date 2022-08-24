@@ -10,9 +10,12 @@ const camera = <Icon name="camera" size={30} color="white" />;
 
 
 const Main = ({navigation}) => {
-    const goToMessagePage=()=> {
-        navigation.navigate('Messages')
-    }
+    
+    
+        
+        
+   
+    const renderSeperator = () => <View style={styles.seperator} />;
     return (
         <SafeAreaView style={styles.enableDirection}>
             <View style={styles.TopGreen}>
@@ -46,12 +49,15 @@ const Main = ({navigation}) => {
             </View>
             <View>
                 <FlatList data={Messages}
-                renderItem={({item})=>
-                <MessagesUnit  info={item.receiver} messageInfo={item.messages} onPress={goToMessagePage}/>}
-                keyExtractor={item=>item.id} />
+                renderItem={({item})=> 
+                <MessagesUnit info={item.receiver} messageInfo={item.messages} onPress={() => navigation.navigate('Messages', {item})} />}
+                keyExtractor={item=>item.id}
+                ItemSeparatorComponent={renderSeperator}  />
+                
             </View>
         </SafeAreaView>
     )
+    
 }
 
 export default Main;
