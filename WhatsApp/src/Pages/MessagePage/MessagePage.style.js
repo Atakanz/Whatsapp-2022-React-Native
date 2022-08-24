@@ -17,7 +17,8 @@ export default StyleSheet.create (
             width:50,
             height:50,
             borderRadius:50,
-            marginHorizontal:10,
+            marginHorizontal:7,
+            marginRight:14
         },
         nameText: {
             color:'white',
@@ -32,11 +33,26 @@ export default StyleSheet.create (
         },
         image: {
             flex:1,
-            justifyContent:'center'
+            justifyContent:'center',
+            
         },
         container: {
             flex:1,
+        },
+        goBackButton: {
+            flex: 0,
+            width: 30,
+            height:30,
+            alignSelf: 'center',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            backgroundColor: '#198754',
+            margin: 0,
+            padding: 0,
+            paddingTop: 0,
+            color:'white',
+           
         }
-        
     }
 )

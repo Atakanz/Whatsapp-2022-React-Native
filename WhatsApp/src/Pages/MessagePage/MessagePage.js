@@ -3,13 +3,15 @@ import { SafeAreaView, View, Text, Image, ImageBackground } from "react-native";
 import styles from './MessagePage.style';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const goBack = <Icon name="keyboard-backspace" size={30} color="white" />;
+
 const videoCam = <Icon name="video" size={30} color="white" />;
 const phone = <Icon name="phone" size={30} color="white" />;
 const dots = <Icon name="dots-vertical" size={30} color="white" />;
-const MessagePage = ({ route }) => {
-    const { item } = route.params
+const MessagePage = ({ route , navigation}) => {
 
+    const goBack = <Icon.Button name="keyboard-backspace" size={30}
+    onPress={()=>navigation.goBack()} style={styles.goBackButton} />;
+    const { item } = route.params
 
     return (
         <SafeAreaView style={styles.enableDirection}>
@@ -29,7 +31,6 @@ const MessagePage = ({ route }) => {
             </View>
             <View style={styles.container}>
                 <ImageBackground source={require('./images.jpg')}resizeMode="cover" style={styles.image}>
-                    
                 </ImageBackground>
             </View>
         </SafeAreaView>
