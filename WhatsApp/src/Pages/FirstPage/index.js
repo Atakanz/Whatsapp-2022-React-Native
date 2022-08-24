@@ -1,1 +1,1 @@
-export {default} from './FirstPage'
+export {default} from './FirstPage';
