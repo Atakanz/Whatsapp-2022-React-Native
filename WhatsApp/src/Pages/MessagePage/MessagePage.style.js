@@ -50,4 +50,31 @@ export default StyleSheet.create({
     paddingTop: 0,
     color: 'white',
   },
+  sendBar: {
+    flexDirection: 'row',
+    paddingHorizontal: 5,
+    marginVertical: 10,
+  },
+  textBar: {
+    flexDirection: 'row',
+    backgroundColor: 'white',
+    borderRadius: 25,
+    paddingHorizontal: 10,
+  },
+  bottomIcons: {
+    justifyContent: 'center',
+    marginHorizontal: 5,
+  },
+  textInput: {
+    width: Dimensions.get('window').width / 1.85,
+    fontSize: 18,
+  },
+  microphoneIcon: {
+    borderRadius: 50,
+    backgroundColor: '#198754',
+    justifyContent: 'center',
+    marginLeft: 5,
+    alignItems: 'center',
+    width: Dimensions.get('window').width / 8.7,
+  },
 });
