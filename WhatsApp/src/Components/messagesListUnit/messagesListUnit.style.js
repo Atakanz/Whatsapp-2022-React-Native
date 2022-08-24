@@ -3,7 +3,7 @@ export default StyleSheet.create({
   messagesUnit: {
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height / 9,
-    paddingLeft: 10,
+    paddingHorizontal: 10,
     paddingTop: 10,
     flex: 1,
   },
@@ -22,5 +22,10 @@ export default StyleSheet.create({
   unitText: {
     fontSize: 16,
     color: 'black',
+  },
+  hourInfoView: {
+    marginLeft: 'auto',
+    justifyContent: 'center',
+    fontWeight: 'bold',
   },
 });

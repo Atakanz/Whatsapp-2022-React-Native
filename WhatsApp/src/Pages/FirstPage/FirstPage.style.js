@@ -35,9 +35,9 @@ export default StyleSheet.create({
     marginHorizontal: 5,
   },
   activatedText: {
-    borderWidth: 1,
-    borderColor: 'white',
-    borderRadius: 10,
+    borderBottomWidth: 3,
+    borderBottomColor: 'white',
+    borderTopWidth: 0
   },
   viewText: {
     justifyContent: 'center',
