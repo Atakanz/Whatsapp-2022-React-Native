@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, View, Text, Image, TouchableOpacity } from "react-native";
+import {SafeAreaView, View, Text, Image, TouchableOpacity} from "react-native";
 import styles from './messagesListUnit.style'
 
 
@@ -15,7 +15,7 @@ const MessagesUnit = props => {
                 </View>
                 <View style={styles.unitTextView}>
                     <Text style={styles.unitText}>{props.info.firstName} {props.info.lastName}</Text>
-                    <Text style={styles.unitText}>{props.messageInfo[0].text}</Text>
+                    <Text style={styles.unitText}>{props.messageInfo[props.messageInfo.length-1].text}</Text>
                 </View>
             </View>
         </TouchableOpacity>

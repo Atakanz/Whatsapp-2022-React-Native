@@ -9,13 +9,13 @@
         },
         messages: [
             {
-                text:"Sana birşey sorabilir miyim?",
-                dateTime:"2022-08-20T19:00:00Z"
-            },
-            {
                 text:"Nasılsın?",
                 dateTime:"2022-08-20T18:59:00Z"
             },
+            {
+                text:"Sana birşey sorabilir miyim?",
+                dateTime:"2022-08-20T19:00:00Z"
+            }     
         ]
     },
     {
@@ -36,7 +36,7 @@
                 dateTime:"2022-08-20T18:59:00Z"
             },
             {
-                text:"Selam?",
+                text:"Selam",
                 dateTime:"2022-08-20T18:59:00Z"
             }
         ]
@@ -59,7 +59,7 @@
                 dateTime:"2022-08-20T18:59:00Z"
             },
             {
-                text:"Selam?",
+                text:"Selam",
                 dateTime:"2022-08-20T18:59:00Z"
             }
         ]
