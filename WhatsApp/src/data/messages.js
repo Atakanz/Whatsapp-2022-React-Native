@@ -16,10 +16,6 @@
                 text:"Nasılsın?",
                 dateTime:"2022-08-20T18:59:00Z"
             },
-            {
-                text:"Selam?",
-                dateTime:"2022-08-20T18:59:00Z"
-            }
         ]
     },
     {

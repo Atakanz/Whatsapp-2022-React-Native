@@ -1,6 +1,7 @@
 import React from "react";
-import { SafeAreaView, View, Text, Image, ImageBackground } from "react-native";
+import { SafeAreaView, View, Text, Image, ImageBackground, FlatList } from "react-native";
 import styles from './MessagePage.style';
+import MessageUnit from '../../Components/messagePageUnit'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
@@ -8,10 +9,12 @@ const videoCam = <Icon name="video" size={30} color="white" />;
 const phone = <Icon name="phone" size={30} color="white" />;
 const dots = <Icon name="dots-vertical" size={30} color="white" />;
 const MessagePage = ({ route , navigation}) => {
+    const {item}=route.params
 
+   
     const goBack = <Icon.Button name="keyboard-backspace" size={30}
     onPress={()=>navigation.goBack()} style={styles.goBackButton} />;
-    const { item } = route.params
+    
 
     return (
         <SafeAreaView style={styles.enableDirection}>
@@ -30,8 +33,13 @@ const MessagePage = ({ route , navigation}) => {
                 </View>
             </View>
             <View style={styles.container}>
-                <ImageBackground source={require('./images.jpg')}resizeMode="cover" style={styles.image}>
-                </ImageBackground>
+                 <ImageBackground source={require('./images.jpg')}resizeMode="cover" style={styles.image}> 
+                 
+                     <FlatList data={item.messages}
+                     renderItem={({item}) => 
+                     <MessageUnit message={item} /> }/>
+                   
+                 </ImageBackground> 
             </View>
         </SafeAreaView>
     )
