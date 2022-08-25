@@ -3,18 +3,18 @@ export const Messages = [
     id: 'm1',
     receiver: {
       id: 'p1',
-      firstName: 'Nehir',
-      lastName: 'Canoğlu',
+      firstName: 'Ecem',
+      lastName: 'DEU',
       imageUrl: 'https://picsum.photos/id/237/200/300',
     },
     messages: [
       {
-        text: 'Nasılsın?',
-        dateTime: '2022-08-20T18:59:00Z',
+        text: 'Hey selamm',
+        dateTime: '2022-08-20T18:52:00Z',
       },
       {
-        text: 'Sana birşey sorabilir miyim?',
-        dateTime: '2022-08-20T19:00:00Z',
+        text: 'Sana acil birşey sorabilir miyim?',
+        dateTime: '2022-08-20T18:52:00Z',
       },
     ],
   },
@@ -22,22 +22,22 @@ export const Messages = [
     id: 'm2',
     receiver: {
       id: 'p2',
-      firstName: 'Melek Ecem',
-      lastName: 'Menet',
+      firstName: 'Pınar',
+      lastName: 'DEU',
       imageUrl: 'https://picsum.photos/id/237/200/300',
     },
     messages: [
       {
-        text: 'Nasılsın?',
-        dateTime: '2022-08-20T19:00:00Z',
+        text: 'Selaam',
+        dateTime: '2022-08-20T18:42:00Z',
       },
       {
         text: 'Nasılsın?',
-        dateTime: '2022-08-20T18:59:00Z',
+        dateTime: '2022-08-20T18:42:00Z',
       },
       {
-        text: 'Selam',
-        dateTime: '2022-08-20T18:59:00Z',
+        text: 'İşlerin bitince yanımıza gelsene kafedeyiz',
+        dateTime: '2022-08-20T18:43:00Z',
       },
     ],
   },
@@ -45,22 +45,22 @@ export const Messages = [
     id: 'm3',
     receiver: {
       id: 'p3',
-      firstName: 'Sinem',
-      lastName: 'Yeniçeri',
+      firstName: 'Mehmet',
+      lastName: 'DEU',
       imageUrl: 'https://picsum.photos/id/237/200/300',
     },
     messages: [
       {
-        text: 'Kafeye gidelim mi?',
-        dateTime: '2022-08-20T19:00:00Z',
-      },
-      {
-        text: 'Nasılsın?',
-        dateTime: '2022-08-20T18:59:00Z',
-      },
-      {
         text: 'Selam',
-        dateTime: '2022-08-20T18:59:00Z',
+        dateTime: '2022-08-20T18:34:00Z',
+      },
+      {
+        text: 'Bugün okulda',
+        dateTime: '2022-08-20T18:35:00Z',
+      },
+      {
+        text: 'neler oldu?',
+        dateTime: '2022-08-20T18:35:00Z',
       },
     ],
   },

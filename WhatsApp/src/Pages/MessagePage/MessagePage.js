@@ -36,7 +36,9 @@ const MessagePage = ({route, navigation}) => {
           <Image style={styles.photo} source={{uri: item.receiver.imageUrl}} />
         </View>
         <View>
-          <Text style={styles.nameText}>{item.receiver.firstName}</Text>
+          <Text style={styles.nameText}>
+            {item.receiver.firstName} {item.receiver.lastName}
+          </Text>
         </View>
         <View style={styles.topLeftIcons}>
           <View>{videoCam}</View>
