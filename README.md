@@ -9,7 +9,7 @@ In this project, the Whatsapp's main and messaging pages are redesigned using Re
 
 ## INSTALLATION
 
-First, you should clone the project and run the commands below respectively in the terminal,
+Clone the project and run the commands below respectively in the terminal.
 ```
 git clone https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-2-Atakanz.git
 ```
