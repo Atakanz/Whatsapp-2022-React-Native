@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, View, Text, FlatList} from 'react-native';
 import styles from './FirstPage.style';
-import PersonCard from '../../Components/messagesListUnit';
+import PersonCard from '../../Components/PersonCard';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Messages} from '../../data/messages';
 const magnify = <Icon name="magnify" size={30} color="white" />;
