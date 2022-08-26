@@ -38,7 +38,7 @@ export const Messages = [
         dateTime: '20.08.2022T18:42:00Z',
       },
       {
-        text: 'Yarın pikniğe sen de geliyor musun?',
+        text: 'Yarın geziye sen de geliyor musun?',
         dateTime: '20.08.2022T18:42:00Z',
       },
     ],
