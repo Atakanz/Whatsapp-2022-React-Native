@@ -12,6 +12,7 @@ const Main = ({navigation}) => {
   // FlatList items are separated by a thin, gray line.
   return (
     <SafeAreaView style={styles.enableDirection}>
+      {/* START-TOPBAR */}
       <View style={styles.TopGreen}>
         <View style={styles.topArea}>
           <View>
@@ -33,11 +34,13 @@ const Main = ({navigation}) => {
             </View>
             <View style={[styles.viewText]}>
               <Text style={styles.topTexts}>ARAMALAR</Text>
+              {/* END-TOPBAR */}
             </View>
           </View>
         </View>
       </View>
       <View>
+        {/* START-MESSAGELIST-PERSONCARDS */}
         <FlatList
           data={Messages}
           renderItem={({item}) => (
@@ -53,6 +56,7 @@ const Main = ({navigation}) => {
           ItemSeparatorComponent={renderSeperator}
         />
       </View>
+      {/* END-MESSAGELIST-PERSONCARD */}
     </SafeAreaView>
   );
 };
