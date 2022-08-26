@@ -1,12 +1,15 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
 import styles from './PersonCard.style';
-const MessagesUnit = props => {
+const PersonCard = props => {
   const timeLastMessage =
     props.messageInfo[props.messageInfo.length - 1].dateTime.split('T')[1];
+  // dateTime info splited into two array item, first is date, second is hour.
   const hourLastMessage = timeLastMessage.substring(0, 5);
+  // Only the first five element of string are needed for hour info.
   return (
     <TouchableOpacity style={styles.messagesUnit} onPress={props.onPress}>
+      {/* onPress navigates to other page and carry the information */}
       <View style={styles.photoTextCover}>
         <View>
           <Image
@@ -29,4 +32,4 @@ const MessagesUnit = props => {
     </TouchableOpacity>
   );
 };
-export default MessagesUnit;
+export default PersonCard;
