@@ -23,15 +23,17 @@ const Main = ({navigation}) => {
           </View>
         </View>
         <View style={styles.topBottomBar}>
-          <View>{camera}</View>
-          <View style={[styles.activatedText, styles.viewText]}>
-            <Text style={styles.topTexts}>SOHBETLER</Text>
-          </View>
-          <View style={[styles.viewText]}>
-            <Text style={styles.topTexts}>DURUM</Text>
-          </View>
-          <View style={[styles.viewText]}>
-            <Text style={styles.topTexts}>ARAMALAR</Text>
+          <View style={styles.CameraIcon}>{camera}</View>
+          <View style={styles.topBarText}>
+            <View style={[styles.activatedText, styles.viewText]}>
+              <Text style={styles.topTexts}>SOHBETLER</Text>
+            </View>
+            <View style={[styles.viewText]}>
+              <Text style={[styles.topTexts, styles.middleTab]}>DURUM</Text>
+            </View>
+            <View style={[styles.viewText]}>
+              <Text style={styles.topTexts}>ARAMALAR</Text>
+            </View>
           </View>
         </View>
       </View>

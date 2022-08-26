@@ -29,7 +29,6 @@ export default StyleSheet.create({
   },
   topBottomBar: {
     flexDirection: 'row',
-    justifyContent: 'space-evenly',
   },
   topTexts: {
     fontSize: 16,
@@ -44,10 +43,20 @@ export default StyleSheet.create({
   },
   viewText: {
     justifyContent: 'center',
+    paddingHorizontal: 18,
   },
   seperator: {
     borderWidth: 0.3,
     borderColor: 'lightgray',
     // FlatList items are separated by a thin, gray line.
   },
+  topBarText: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 5,
+  },
+  cameraIcon: {
+    marginRight: 'auto',
+    marginLeft: 5,
+  }
 });
