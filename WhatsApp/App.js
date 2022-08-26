@@ -8,6 +8,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
+        {/* The screen's name is hidden at the top.  */}
         <Stack.Screen name="Home" component={Main} />
         <Stack.Screen name="Messages" component={MessagePage} />
       </Stack.Navigator>

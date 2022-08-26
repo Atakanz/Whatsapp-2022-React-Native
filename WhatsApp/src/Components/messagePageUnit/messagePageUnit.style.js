@@ -10,6 +10,7 @@ export default StyleSheet.create({
     paddingHorizontal: 5,
     paddingVertical: 5,
     flexDirection: 'row',
+    // MessageUnit width is set to changeable with the width of text
   },
   textMessage: {
     fontSize: 19,

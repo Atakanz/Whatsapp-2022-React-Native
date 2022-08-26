@@ -1,1 +1,1 @@
-export {default} from './messagesListUnit';
+export {default} from './PersonCard';

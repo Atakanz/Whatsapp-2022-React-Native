@@ -5,9 +5,11 @@ export default StyleSheet.create({
     height: Dimensions.get('window').height / 7,
     justifyContent: 'space-between',
   },
+  // Tab names are placed at the bottom of topGreen view
   enableDirection: {
     flex: 1,
   },
+  // flexDirection of all views are set changeable
   topArea: {
     flexDirection: 'row',
   },
@@ -21,6 +23,7 @@ export default StyleSheet.create({
   topIconsSide: {
     padding: 10,
     marginLeft: 'auto',
+    // Icons of the greenview are placed left side
     flexDirection: 'row',
     justifyContent: 'space-evenly',
   },
@@ -37,7 +40,7 @@ export default StyleSheet.create({
   activatedText: {
     borderBottomWidth: 3,
     borderBottomColor: 'white',
-    borderTopWidth: 0
+    borderTopWidth: 0,
   },
   viewText: {
     justifyContent: 'center',
@@ -45,5 +48,6 @@ export default StyleSheet.create({
   seperator: {
     borderWidth: 0.3,
     borderColor: 'lightgray',
+    // FlatList items are separated by a thin, gray line.
   },
 });

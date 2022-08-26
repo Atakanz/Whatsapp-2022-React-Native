@@ -20,6 +20,7 @@ const camera = <Icon name="camera" size={25} color="gray" />;
 const microphone = <Icon name="microphone" size={25} color="white" />;
 const MessagePage = ({route, navigation}) => {
   const {item} = route.params;
+  // Personal data are taken as item and placed to props to be sent to MessagePageUnit Component.
   const goBack = (
     <Icon.Button
       name="keyboard-backspace"
@@ -27,6 +28,7 @@ const MessagePage = ({route, navigation}) => {
       onPress={() => navigation.goBack()}
       style={styles.goBackButton}
     />
+    // goBack() navigation property is added to goBack ıcon.
   );
   return (
     <SafeAreaView style={styles.enableDirection}>
@@ -49,10 +51,12 @@ const MessagePage = ({route, navigation}) => {
       <View style={styles.container}>
         <ImageBackground
           source={require('./images.jpg')}
+          // Imagebackground view is choosed for messaging area.
           resizeMode="cover"
           style={styles.image}>
           <FlatList
             data={item.messages}
+            // Only the messages array is chosen to be shown in the messaging area
             renderItem={({item}) => <MessageUnit message={item} />}
           />
           <View style={styles.sendBar}>

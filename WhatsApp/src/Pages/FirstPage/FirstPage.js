@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, View, Text, FlatList} from 'react-native';
 import styles from './FirstPage.style';
-import MessagesUnit from '../../Components/messagesListUnit';
+import PersonCard from '../../Components/messagesListUnit';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Messages} from '../../data/messages';
 const magnify = <Icon name="magnify" size={30} color="white" />;
@@ -9,6 +9,7 @@ const dots = <Icon name="dots-vertical" size={30} color="white" />;
 const camera = <Icon name="camera" size={30} color="white" />;
 const Main = ({navigation}) => {
   const renderSeperator = () => <View style={styles.seperator} />;
+  // FlatList items are separated by a thin, gray line.
   return (
     <SafeAreaView style={styles.enableDirection}>
       <View style={styles.TopGreen}>
@@ -38,10 +39,12 @@ const Main = ({navigation}) => {
         <FlatList
           data={Messages}
           renderItem={({item}) => (
-            <MessagesUnit
-              info={item.receiver}
+            <PersonCard
+              receiverInfo={item.receiver}
               messageInfo={item.messages}
+              // data comes from a js file  and goes to MessagesListUnit.
               onPress={() => navigation.navigate('Messages', {item})}
+              // data of each person goes to personal MessagePage.
             />
           )}
           keyExtractor={item => item.id}

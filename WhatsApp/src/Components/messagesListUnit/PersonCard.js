@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
-import styles from './messagesListUnit.style';
+import styles from './PersonCard.style';
 const MessagesUnit = props => {
   const timeLastMessage =
     props.messageInfo[props.messageInfo.length - 1].dateTime.split('T')[1];
@@ -9,11 +9,14 @@ const MessagesUnit = props => {
     <TouchableOpacity style={styles.messagesUnit} onPress={props.onPress}>
       <View style={styles.photoTextCover}>
         <View>
-          <Image style={styles.photo} source={{uri: props.info.imageUrl}} />
+          <Image
+            style={styles.photo}
+            source={{uri: props.receiverInfo.imageUrl}}
+          />
         </View>
         <View style={styles.unitTextView}>
           <Text style={styles.unitText}>
-            {props.info.firstName} {props.info.lastName}
+            {props.receiverInfo.firstName} {props.receiverInfo.lastName}
           </Text>
           <Text style={styles.unitText}>
             {props.messageInfo[props.messageInfo.length - 1].text}
