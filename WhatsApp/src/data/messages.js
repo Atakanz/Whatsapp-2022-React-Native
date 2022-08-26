@@ -10,12 +10,12 @@ export const Messages = [
     },
     messages: [
       {
-        text: 'Hey selam',
-        dateTime: '2022-08-20T18:52:00Z',
+        text: 'Selam',
+        dateTime: '20.08.2022T18:52:00Z',
       },
       {
         text: 'Sana acil birşey sorabilir miyim?',
-        dateTime: '2022-08-20T18:52:00Z',
+        dateTime: '20.08.2022T18:52:00Z',
       },
     ],
   },
@@ -31,11 +31,15 @@ export const Messages = [
     messages: [
       {
         text: 'Selam',
-        dateTime: '2022-08-20T18:42:00Z',
+        dateTime: '20.08.2022T18:42:00Z',
       },
       {
         text: 'Nasılsın?',
-        dateTime: '2022-08-20T18:42:00Z',
+        dateTime: '20.08.2022T18:42:00Z',
+      },
+      {
+        text: 'Yarın pikniğe sen de geliyor musun?',
+        dateTime: '20.08.2022T18:42:00Z',
       },
     ],
   },
@@ -50,15 +54,15 @@ export const Messages = [
     messages: [
       {
         text: 'Selam',
-        dateTime: '2022-08-20T18:34:00Z',
+        dateTime: '20.08.2022T18:34:00Z',
       },
       {
         text: 'Sana gönderdiğim dosyalara',
-        dateTime: '2022-08-20T18:35:00Z',
+        dateTime: '20.08.2022T18:35:00Z',
       },
       {
         text: 'bakabildin mi :)',
-        dateTime: '2022-08-20T18:35:00Z',
+        dateTime: '20.08.2022T18:35:00Z',
       },
     ],
   },

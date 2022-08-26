@@ -21,6 +21,9 @@ const microphone = <Icon name="microphone" size={25} color="white" />;
 const MessagePage = ({route, navigation}) => {
   const {item} = route.params;
   // Personal data are taken as item and placed to props to be sent to MessagePageUnit Component.
+
+  const date = item.messages[0];
+  const dateInfo = date.dateTime.split('T')[0];
   const goBack = (
     <Icon.Button
       name="keyboard-backspace"
@@ -54,6 +57,9 @@ const MessagePage = ({route, navigation}) => {
           // Imagebackground view is choosed for messaging area.
           resizeMode="cover"
           style={styles.image}>
+          <View style={styles.dateView}>
+            <Text style={styles.dateText}>{dateInfo}</Text>
+          </View>
           <FlatList
             data={item.messages}
             // Only the messages array is chosen to be shown in the messaging area

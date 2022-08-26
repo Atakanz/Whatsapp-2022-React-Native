@@ -77,4 +77,21 @@ export default StyleSheet.create({
     alignItems: 'center',
     width: Dimensions.get('window').width / 8.7,
   },
+  dateView: {
+    marginVertical: 10,
+    borderRadius: 10,
+    backgroundColor: 'lightgray',
+    color: 'white',
+    width: 'auto',
+    marginHorizontal: 5,
+    paddingHorizontal: 5,
+    padding: 3,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  },
+  dateText: {
+    color: 'lightblack',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  }
 });
